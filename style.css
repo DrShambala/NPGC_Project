@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oswald, sans-serif;
+  color: #fff;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+}
+.navbar{
+    width: 100vw;
+    height: 150px;
+    background: rgba(0, 128, 0, 0.459);
+    display: flex;
+    justify-content: right;
+    padding: 0 70px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.moreBox{
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 10px;
+    rotate: 45deg;
+}
