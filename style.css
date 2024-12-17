@@ -1,23 +1,92 @@
-html,body{
-	margin: 0;
-	padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: 'Cervo Neue';
+    src: url('fonts/fontspring-demo-cervoneue-blackneue-webfont.woff2') format('woff2'),
+         url('fonts/fontspring-demo-cervoneue-blackneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vw;
+  background: #181818;
+  display: flex;
+  justify-content: right;
+}
+.navPanel a {
+  color: white;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5vw;
+}
+.navPanel {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sidebar {
+	height: 100%;
+	width: 120px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
 	
 }
-.navbar{
-	width: 100%;
-	height: 10vw;
-	background: #181818;
-	display: flex;
-	justify-content: right;
+.sidebar #box1 {
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  background: wheat;
 }
-.navPanel a{
-	color: white;
+.sidebar #box2 {
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  margin-top: auto;
+  background: wheat;
+}
+.page1{
+	margin-left: 10.5rem;
+
+}
+.page1 h1 {
+  font-size: 9.5rem;
+  font-weight: 600; 
+  font-family: 'Cervo Neue', sans-serif;
+
+}
+.page1 h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Cervo Neue', sans-serif;
+}
+.page1 div{
+	width: 35px;
+	height: 35px;
+	background: orange;
+	transform: rotate(60deg);
+	border-radius: 6px;
+}
+.page1 section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20vw;
+}
+.page1 a{
 	text-decoration: none;
-	font-family: "Dancing Script",cursive;
-	font-size: 1.5vw;
-}
-.navPanel{
-	width: 50%;
-	display: flex;
-	justify-content: space-evenly;
+	color: black;
+	font-family: 'Cervo Neue', sans-serif;
 }
