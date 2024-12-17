@@ -14,15 +14,16 @@ body {
 .navbar {
   width: 100%;
   height: 10vw;
-  background: #181818;
   display: flex;
   justify-content: right;
+  border: 1px solid;
 }
 .navPanel a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: "Dancing Script", cursive;
   font-size: 1.5vw;
+  font-family: 'Cervo Neue', sans-serif;
+
 }
 .navPanel {
   width: 50%;
@@ -36,11 +37,11 @@ body {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid;
 	
 }
 .sidebar #box1 {
@@ -89,4 +90,26 @@ body {
 	text-decoration: none;
 	color: black;
 	font-family: 'Cervo Neue', sans-serif;
+}
+/* -------------------------------- */
+.page2{
+	background: salmon;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+}
+.posts{
+	width: 280px;
+	height: 300px;
+	background: lightblue;
+	margin: 10px;
+	display: inline-block;
+	flex: none;
+}
+.page3 img{
+	width: 100%;
+	transform: rotate(15deg);	
+	border-top-left-radius: 100px;
+	margin-left: 10px;
 }
