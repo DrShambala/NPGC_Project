@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Cervo Neue';
@@ -114,30 +115,61 @@ video{
 	width: 100%;
 }
 .posts{
-	width: 280px;
-	height: 300px;
+	width: 350px;
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 	background: lightblue;
-	margin: 10px;
-	display: block;
-	animation:abc 5s linear;
+	border-radius: 20px;
+	border: 7px solid white;
+	/* display: block; */
+	animation:abc 7s linear;
 	animation-timeline:view();
+}
+.posts a{
+	width: 150px;
+	height: 300px;
+	text-decoration: none;
+	margin: auto;
+	color: black;
+	/* background: #00000063; */
+	display: flex;
+	flex-direction: column;
+    /* align-items: center; */
+}
+.posts h2{
+	text-align: center;
 }
 @keyframes abc{
 	0% {
 	  opacity:0;
 	  scale:0.5;
-	  transform:translateX(100vw);
+	  transform:translateX(130rem);
+	  rotate: 30deg;
 	  /* float: right; */
+	}
+	25% {
+		opacity:0.5;
+		scale:0.7;
 	}
 	50% {
 		opacity:1;
 		scale:1;
+		transform:translateX(600px);
+		rotate: 0deg;
+	}
+	75% {
+		opacity:0.8;
+		scale:0.7;
 	}
 	100% {
 		opacity:0;
 		scale:0.5;
 		/* float: left; */
-	  transform:translateX(-300px);
+		transform:translateX(-300px);
+		rotate: -30deg;
 	}
 }
 .page3{
