@@ -111,19 +111,37 @@ video{
 }
 /* -------------------------------- */
 .page2{
-	background: salmon;
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	display: flex;
+	width: 100%;
 }
 .posts{
 	width: 280px;
 	height: 300px;
 	background: lightblue;
 	margin: 10px;
-	display: inline-block;
-	flex: none;
+	display: block;
+	animation:abc 5s linear;
+	animation-timeline:view();
+}
+@keyframes abc{
+	0% {
+	  opacity:0;
+	  scale:0.5;
+	  transform:translateX(100vw);
+	  /* float: right; */
+	}
+	50% {
+		opacity:1;
+		scale:1;
+	}
+	100% {
+		opacity:0;
+		scale:0.5;
+		/* float: left; */
+	  transform:translateX(-300px);
+	}
+}
+.page3{
+	overflow: hidden;
 }
 .glass{
 	width: 500px;
