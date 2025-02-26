@@ -1,3 +1,7 @@
+:root{
+	--green: #008000;
+}
+
 html,
 body {
   margin: 0;
@@ -13,7 +17,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-video{
+#bgvideo{
 	width: 100%;
 	position: fixed;
 	z-index: -1;
@@ -34,6 +38,13 @@ video{
   width: 50%;
   display: flex;
   justify-content: space-evenly;
+}
+.scrolldown{
+	width: 20px;
+    height: 20px;
+    background: orange;
+    transform: rotate(60deg);
+    border-radius: 6px;
 }
 .sidebar {
 	height: 100%;
@@ -65,6 +76,8 @@ video{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	font-weight: 900;
 }
 #box1 img{
 	width: 70px;
@@ -87,7 +100,8 @@ video{
 .page1 h1 {
   font-size: 9.5rem;
   font-family: 'Cervo Neue', sans-serif;
-	color: aliceblue;
+	color: var(--green);
+	text-shadow: 4px 4px 4px black;
 }
 .page1 h6 {
 	font-size: 1.5rem;
@@ -97,8 +111,8 @@ video{
 .page1 h3{
 	font-size: 8rem;
 	font-weight: 900;
-	-webkit-text-stroke: 4px green;
-	color: aliceblue;
+	-webkit-text-stroke: 4px var(--green);
+	color: black;
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -274,3 +288,38 @@ video{
 	color: white;
 	background:  rgb(59, 59, 59);
   }
+
+  .page5{
+	width: 100%;
+	height: auto;
+	background: rgb(233, 233, 233);
+}
+.container{
+	width: 100%;
+	height: 500px;
+	border: 3px solid white;
+	overflow: auto;
+	white-space: nowrap;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.reel{
+	margin: 2px;
+	width: 100px;
+	height: auto;
+	background: #000;;
+	overflow: hidden;
+	display: inline-block;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.reel video{
+	width: 100%;
+	height: auto;
+}
+.reel:hover{
+	border-radius: 10px;
+	width: 200px;
+	height: auto;
+}
