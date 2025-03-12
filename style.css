@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* background: green; */
+  background: rgba(0, 0, 0, 0.685);
   /* background: #000; */
 }
 @font-face {
@@ -100,7 +100,7 @@ body {
 .page1 h1 {
   font-size: 9.5rem;
   font-family: 'Cervo Neue', sans-serif;
-	color: var(--green);
+	color: white;
 	text-shadow: 4px 4px 4px black;
 }
 .page1 h6 {
@@ -111,17 +111,25 @@ body {
 .page1 h3{
 	font-size: 8rem;
 	font-weight: 900;
-	-webkit-text-stroke: 4px var(--green);
+	-webkit-text-stroke: 4px green;
 	color: black;
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
 }
-.page1 div,section div{
+.page1 div,.gear{
 	width: 35px;
 	height: 35px;
 	background: orange;
 	transform: rotate(60deg);
 	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+.gear:hover{
+	transform: rotate(120deg);
+	transition: 0.5s;
 }
  section{
 	display: flex;
@@ -210,12 +218,12 @@ body {
 	height: auto;
 }
 .glass{
-	width: 500px;
-	height: 500px;
+	width: 35vw;
+	height: 35vw;
 	border-radius: 50px;
 	position: relative;
 	z-index: 2;
-	top: 550px;
+	top: 40vw;
 	left: 20%;
 	background: transparent;
 	backdrop-filter: blur(10px);
@@ -223,6 +231,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 40px 30px;
+	box-shadow: 4px 4px 4px;
 }
 
 .glass h2{
@@ -249,7 +258,7 @@ body {
 .page4{
 	width: 100%;
 	height: auto;
-	background: rgb(233, 233, 233);
+	background: #181818;
 	margin: 0;
 	position: static;
 	bottom: 200px;
@@ -280,8 +289,9 @@ body {
 .section p{
 	font-size: 35px;
     padding: 0 80px;
-	/* font-family: 'Cervo Neue', sans-serif; */
-	color:rgb(47, 0, 255) ;
+	font-family: 'Cervo Neue', sans-serif;
+	font-weight: 500;
+	color:rgb(255, 255, 255) ;
 }
 
 .section p::selection {
@@ -292,12 +302,11 @@ body {
   .page5{
 	width: 100%;
 	height: auto;
-	background: rgb(233, 233, 233);
+	background: #181818;
 }
 .container{
 	width: 100%;
 	height: 500px;
-	border: 3px solid white;
 	overflow: auto;
 	white-space: nowrap;
 	justify-content: center;
